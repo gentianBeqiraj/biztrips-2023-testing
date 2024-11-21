@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "9141a316-1693-4bc5-af3e-8ffd34a8726b",
+		"name": "Biztrips",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39903598"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3001/trips",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/trips"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/trips/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/trips/1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/trips",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 10,\n    \"title\": \"Test\",\n    \"description\": \"asdf sdfg dfghfgh jk mqrnbm\",\n    \"startTrip\": [\n        2021,\n        2,\n        13,\n        0,\n        0\n    ],\n    \"endTrip\": [\n        2021,\n        2,\n        15,\n        16,\n        56\n    ],\n    \"meetings\": [\n        {\n            \"id\": 1,\n            \"title\": \"One Conference\",\n            \"description\": \"Key Note on One Conference\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/trips"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/trips/10",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test Updated\",\n    \"description\": \"asdf sdfg dfghfgh jk mqrnbm\",\n    \"startTrip\": [\n        2021,\n        2,\n        13,\n        0,\n        0\n    ],\n    \"endTrip\": [\n        2021,\n        2,\n        15,\n        16,\n        56\n    ],\n    \"meetings\": [\n        {\n            \"id\": 1,\n            \"title\": \"One Conference\",\n            \"description\": \"Key Note on One Conference\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/trips/10"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/trips/10",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3001/trips/10"
+			},
+			"response": []
+		}
+	]
+}

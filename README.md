@@ -28,3 +28,14 @@
 ## 1.5 Fehlerbehandlung
 - Fehler in Tests dokumentieren.
 - Über GitLab CI/CD automatisch melden.
+
+---
+
+# 2. Backend-Tests mit PostMan
+Wir haben alle CRUD-Operatoren für die Trip-Entity erfolgreich auf PostMan getestet. Anschliessend 
+haben wird die Collection exportiert ([siehe collection](./src/backend_tests.json)), um diese mit 
+newman automatisieren zu können:
+
+```bash
+newman run ./src/backend_tests.json
+```
