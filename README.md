@@ -27,11 +27,13 @@
 
 #### 1.4.2.1 Components-Test:
 - **Komponente:** TripsList
-- **Was wird getestet:**
   - Testen, ob alle Trips angezeigt werden, wenn kein Filter gesetzt ist.
   - Testen, ob die Filterfunktion nach Monaten funktioniert.
   - Testen, ob die korrekte Anzahl der gefilterten Trips angezeigt wird, basierend auf der Auswahl des Monats.
   - Testen, ob das Klicken auf den "Add to Wishlist"-Button einen Trip zur Wunschliste hinzufügt.
+- **Komponente:** Wishlist
+  - Testen, ob Wishlist-Einträge korrekt dargestellt werden.
+  - Testen, ob "Wishlist is empty" gezeigt wird, wenn keine Artikel in der Wishlist vorhanden sind.
   
 
 ## 1.5 Fehlerbehandlung
