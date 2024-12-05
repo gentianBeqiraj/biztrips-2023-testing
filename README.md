@@ -84,6 +84,12 @@ Folgende Test-Files wurden erstellt:
 - [src/tests/TripList.test.js](./src/tests/TripList.test.js)
 - [src/tests/Wishlist.test.js](./src/tests/Wishlist.test.js)
 
+Diese Tests können mit dem folgenden Befehl ausgeführt werden:
+
+```bash
+npm test
+```
+
 ---
 
 # 4 Pipeline
