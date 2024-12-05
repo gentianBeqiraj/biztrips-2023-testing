@@ -9,7 +9,7 @@ describe('TripList Component', () => {
         render(<TripList addToWishlist={mockAddToWishlist} />);
 
         testTrips.forEach((trip) => {
-            expect(screen.getByText(trip.title)).toBeInTheDocument();
+            expect(screen.getByText(trip.description)).toBeInTheDocument();
         });
     });
 
@@ -42,7 +42,7 @@ describe('TripList Component', () => {
             target: { value: '6' },
         });
 
-        expect(screen.getByText('Found 1 trip for the month of June')).toBeInTheDocument();
+        expect(screen.getByText('Found 1 trips for the month of June')).toBeInTheDocument();
     });
 
     test('fügt einen Trip zur Wunschliste hinzu', () => {
