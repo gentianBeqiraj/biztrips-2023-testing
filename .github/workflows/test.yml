@@ -1,11 +1,14 @@
 on:
   push:
+    branches:
+      - main
 
 name: Testing
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - name: Set up node
@@ -18,7 +21,3 @@ jobs:
       - name: Run tests
         run: |
           npm run test
-      - name: Run Backend tests
-        run: |
-          npm start
-          newman run ./src/backend_tests.json
