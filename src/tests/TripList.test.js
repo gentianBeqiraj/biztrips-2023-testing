@@ -54,4 +54,5 @@ describe('TripList Component', () => {
         expect(mockAddToWishlist).toHaveBeenCalledTimes(1);
         expect(mockAddToWishlist).toHaveBeenCalledWith(testTrips[0]);
     });
+
 });
